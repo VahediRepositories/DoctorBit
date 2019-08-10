@@ -6,7 +6,7 @@ from wagtail.snippets.models import register_snippet
 
 class Category(models.Model):
     name = models.CharField(
-        max_length=300, unique=True, blank=False
+        max_length=255, unique=True, blank=False
     )
 
     image = models.ForeignKey(
